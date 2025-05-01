@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxwo2slowg7au"]
+
+[ext_resource type="Texture2D" uid="uid://bhou5j2iehkqp" path="res://Machines/Sprites/neko-cafe-furnitures - Copy.png" id="1_buisf"]
+[ext_resource type="Script" uid="uid://fp3kw65447e1" path="res://Machines/Scenes/coffee_machine.gd" id="1_khxqo"]
+[ext_resource type="PackedScene" uid="uid://bjtoslw7nnl74" path="res://Interaction_Components/Scenes/Interactable.tscn" id="3_gx2gi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_buisf"]
+radius = 14.0357
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l7sca"]
+radius = 14.0
+
+[node name="CoffeeMachine" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_khxqo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_buisf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_buisf")
+
+[node name="Interactable" parent="." instance=ExtResource("3_gx2gi")]
+interact_name = "E to Make Coffee"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_l7sca")

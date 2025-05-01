@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnka33pvm2cjn"]
+
+[ext_resource type="Script" uid="uid://c62ih2lrkl3p1" path="res://take_order_button.gd" id="1_osrbs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qquh2"]
+size = Vector2(95, 31)
+
+[node name="TakeOrderButton" type="Button"]
+custom_minimum_size = Vector2(45, 20)
+offset_right = 95.0
+offset_bottom = 31.0
+text = "Take Order"
+script = ExtResource("1_osrbs")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(47.5, 14.5)
+shape = SubResource("RectangleShape2D_qquh2")
+
+[connection signal="pressed" from="." to="." method="_on_button_pressed"]

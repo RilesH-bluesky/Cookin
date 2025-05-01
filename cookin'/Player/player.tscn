@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://b8ebwqc36u557"]
+[gd_scene load_steps=16 format=3 uid="uid://b8ebwqc36u557"]
 
 [ext_resource type="Script" uid="uid://eoh0mgum7i8a" path="res://Player/Player Scripts/Player.gd" id="1_4ntmi"]
 [ext_resource type="Texture2D" uid="uid://donc7qe7yxi7r" path="res://Player/Sprite/ExamplePlayerSprite.png" id="1_l8h54"]
 [ext_resource type="Script" uid="uid://dglyai8jnc426" path="res://Player/Player Scripts/player_state_machine.gd" id="3_btcbx"]
 [ext_resource type="Script" uid="uid://b5e6pjdm06eus" path="res://Player/Player Scripts/state_idle.gd" id="4_gwnis"]
 [ext_resource type="Script" uid="uid://qgngw3q75fct" path="res://Player/Player Scripts/state_walk.gd" id="5_k53q1"]
+[ext_resource type="PackedScene" uid="uid://cwnwvlxdf7bh3" path="res://Interaction_Components/Scenes/InteractingComponent.tscn" id="6_fhl08"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_edjgo"]
 radius = 13.0
@@ -138,7 +139,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D"]
-collision_mask = 224
+collision_mask = 96
 script = ExtResource("1_4ntmi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -163,6 +164,7 @@ script = ExtResource("4_gwnis")
 
 [node name="Walk" type="Node2D" parent="StateMachine"]
 script = ExtResource("5_k53q1")
-move_speed = null
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="InteractingComponent" parent="." instance=ExtResource("6_fhl08")]
