@@ -1,0 +1,22 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1746123618
+ExampleCafe.tscn::PackedScene::8537258644576729302::1746123618::0::1::::<><><>0<>0<><>::uid://e0ecl7d0iyl3::::res://Tile_Maps/Sprites/neko-cafe-tilemap.png<>uid://dwo1ekwjek6vn::::res://Tile_Maps/Sprites/neko-cafe-furnitures.png
+icon.svg::CompressedTexture2D/CompressedTexture2D::3389202220025988664::1744891544::1744891631::1::::<><><>0<>0<>b466a62426eed7b2503a9b71698a296a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+playground.tscn::PackedScene/PackedScene::6807231303906168673::1744891544::0::1::::<><><>0<>0<><>::uid://b8ebwqc36u557::::res://Player/player.tscn<>uid://dtvrnxmq48783::::res://ExampleCafe.tscn
+::res://Inventory/::1746120062
+PlayerInventory.tscn::PackedScene/PackedScene::1024634053894685279::1744923882::0::1::::<><><>0<>0<><>::
+::res://Inventory/Resources/::1746120062
+::res://Player/::1744891544
+player.tscn::PackedScene/PackedScene::4711010884000734244::1744891544::0::1::::<><><>0<>0<><>::uid://eoh0mgum7i8a::::res://Player/Player Scripts/Player.gd<>uid://donc7qe7yxi7r::::res://Player/Sprite/ExamplePlayerSprite.png<>uid://dglyai8jnc426::::res://Player/Player Scripts/player_state_machine.gd<>uid://b5e6pjdm06eus::::res://Player/Player Scripts/state_idle.gd<>uid://qgngw3q75fct::::res://Player/Player Scripts/state_walk.gd
+::res://Player/Player Scripts/::1744891544
+Player.gd::GDScript/GDScript::310126967380994882::1744891544::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+player_state_machine.gd::GDScript/GDScript::7604560947620301289::1744891544::0::1::::PlayerStateMachine<>Node<><>0<>0<><>::
+state.gd::GDScript/GDScript::6006096573487760176::1744891544::0::1::::State<>Node<><>0<>0<><>::
+state_idle.gd::GDScript/GDScript::4502252995459067282::1744891544::0::1::::State_Idle<>State<><>0<>0<><>::
+state_walk.gd::GDScript/GDScript::1136208999941411547::1744891544::0::1::::State_Walk<>State<><>0<>0<><>::
+::res://Player/Sprite/::1744891631
+ExamplePlayerSprite.png::CompressedTexture2D/CompressedTexture2D::8168922200244763177::1744891544::1744891631::1::::<><><>0<>0<>e730281f2f8b99fc094f921e4c5e9478<>res://.godot/imported/ExamplePlayerSprite.png-b8990f830b61dde9760c889261bf1ae5.ctex::
+::res://Tile_Maps/::1744891544
+::res://Tile_Maps/Sprites/::1744891631
+neko-cafe-furnitures.png::CompressedTexture2D::8733904244294292483::1744891544::1746123620::1::::<><><>0<>0<>b2016f5cceb793553f16aa2eef12b107<>res://.godot/imported/neko-cafe-furnitures.png-46423e7affbadbddf9455fbc962c2e5c.ctex::
+neko-cafe-tilemap.png::CompressedTexture2D::332611885323149730::1744891544::1746123620::1::::<><><>0<>0<>76aee999a397ad1203bef6e731802039<>res://.godot/imported/neko-cafe-tilemap.png-67b22fd5f5ca521bf1f06bbbb254bbee.ctex::

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dtvrnxmq48783"]
 
-[ext_resource type="Texture2D" uid="uid://e0ecl7d0iyl3" path="res://Tile Maps/Sprites/neko-cafe-tilemap.png" id="1_stdd5"]
-[ext_resource type="Texture2D" uid="uid://dwo1ekwjek6vn" path="res://Tile Maps/Sprites/neko-cafe-furnitures.png" id="2_xowjk"]
+[ext_resource type="Texture2D" uid="uid://e0ecl7d0iyl3" path="res://Tile_Maps/Sprites/neko-cafe-tilemap.png" id="1_stdd5"]
+[ext_resource type="Texture2D" uid="uid://dwo1ekwjek6vn" path="res://Tile_Maps/Sprites/neko-cafe-furnitures.png" id="2_xowjk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xowjk"]
 texture = ExtResource("1_stdd5")
