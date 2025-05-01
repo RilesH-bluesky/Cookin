@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3ljd2bcuks3i"]
+
+[ext_resource type="Script" uid="uid://bu8pla41njvwa" path="res://UI/ticket hanger/ticket_hanger.gd" id="1_rjfrn"]
+[ext_resource type="Texture2D" uid="uid://dk2i6qf8wv1q8" path="res://UI/text box/Text_Box.png" id="2_8uksh"]
+[ext_resource type="FontFile" uid="uid://dymdr4slswp2l" path="res://UI/fonts/PressStart2P-Regular.ttf" id="2_oml0w"]
+
+[node name="TicketHanger" type="MarginContainer"]
+offset_right = 48.0
+offset_bottom = 65.0
+script = ExtResource("1_rjfrn")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_8uksh")
+region_rect = Rect2(0, 0, 48, 48)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="OrderLabel" type="Label" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.00031297, 0.0235767, 0.222726, 1)
+theme_override_fonts/font = ExtResource("2_oml0w")
+vertical_alignment = 1

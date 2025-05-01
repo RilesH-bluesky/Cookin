@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvnind8jgn8hf"]
+
+[ext_resource type="Script" uid="uid://bkcxtfxgvp6tj" path="res://OrderTicket.gd" id="1_gweov"]
+
+[node name="OrderTicket" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_gweov")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 80.0
+
+[node name="Label" type="Label" parent="Background"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Order Goes Here"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
