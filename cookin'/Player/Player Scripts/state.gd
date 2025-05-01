@@ -14,9 +14,12 @@ func Exit() -> void:
 
 func Process( _delta : float ) -> State:
 	return null
+	pass
 	
 func Physics (_delta : float ) -> State:
 	return null
+	pass
 
 func HandleInput( _event: InputEvent ) -> State:
 	return null
+	pass

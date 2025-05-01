@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpom7idmf8aan"]
+
+[ext_resource type="Script" uid="uid://mjq0sutuyi7g" path="res://1Customer/1Customer Scripts/Capy.gd" id="1_qykrp"]
+[ext_resource type="Texture2D" uid="uid://we840yxuutc3" path="res://1Customer/Sprites/Capybara.png" id="2_fas7o"]
+[ext_resource type="Script" uid="uid://coitgaat0iarj" path="res://1Customer/Scenes/ui_position.gd" id="3_hw5vl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gtxmi"]
+radius = 19.0263
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hw5vl"]
+size = Vector2(53, 20)
+
+[node name="Customer" type="CharacterBody2D"]
+position = Vector2(251, 149)
+script = ExtResource("1_qykrp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gtxmi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(7, -18)
+texture = ExtResource("2_fas7o")
+hframes = 8
+vframes = 8
+
+[node name="ClickArea" type="Area2D" parent="."]
+position = Vector2(33, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
+position = Vector2(-60, -61)
+shape = SubResource("RectangleShape2D_hw5vl")
+
+[node name="UIPosition" type="Marker2D" parent="."]
+position = Vector2(-27, -60)
+script = ExtResource("3_hw5vl")

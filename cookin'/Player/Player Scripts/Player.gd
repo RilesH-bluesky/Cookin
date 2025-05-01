@@ -7,6 +7,7 @@ var direction : Vector2 = Vector2.ZERO
 @onready var sprite_2d : Sprite2D = $Sprite2D
 @onready var state_machine: PlayerStateMachine = $StateMachine
 
+
 func _ready():
 	state_machine.Initialize(self)
 	pass
