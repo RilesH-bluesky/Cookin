@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e0ecl7d0iyl3"
-path="res://.godot/imported/neko-cafe-tilemap.png-f40efcc793570d9972fc5d30f13cd1f6.ctex"
+uid="uid://dwo1ekwjek6vn"
+path="res://.godot/imported/neko-cafe-furnitures.png-46423e7affbadbddf9455fbc962c2e5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tile Maps/Sprites/neko-cafe-tilemap.png"
-dest_files=["res://.godot/imported/neko-cafe-tilemap.png-f40efcc793570d9972fc5d30f13cd1f6.ctex"]
+source_file="res://Tile_Maps/Sprites/neko-cafe-furnitures.png"
+dest_files=["res://.godot/imported/neko-cafe-furnitures.png-46423e7affbadbddf9455fbc962c2e5c.ctex"]
 
 [params]
 
